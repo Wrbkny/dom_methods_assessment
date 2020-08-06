@@ -1,33 +1,48 @@
 
 
-const htmlElement = document.createElement('HTML')
-const headElement = document.createElement('HEAD')
-const metaElement = document.createElement('META')
-const titleElement = document.createElement('TITLE')
-const bodyElement = document.createElement('BODY')
-const buttonElement = document.createElement('BUTTON')
-const mainElement = document.createElement('MAIN')
-const scriptElement = document.createElement('SCRIPT')
-const imgElement = document.createElement('IMG')
-const aElement = document.createElement('A')
+let buttonElement = document.createElement('BUTTON')
+let mainElement = document.createElement('MAIN')
+let imageElement = document.createElement('IMG')
+let anchorElement = document.createElement('A')
+let linkElement = document.createElement('LINK')
+imageElement.src='https://www.goldengate.org/assets/1/15/gallerymaindimensionid/color_image_looking_up_tower_3.jpg?2577'
+anchorElement.href='https://www.google.com'
 
-imgElement.classList.add('image')
-//imgElement.img = src;"https://www.shutterstock.com/image-photo/cannes-france-may-15-2018-chewbacca-1227212848" ;alt="Simply Easy Learning" ;width="200"
-//height="80" 
-//document.body.appendChild(imgElement)
+document.body.append(buttonElement)
+document.body.append(mainElement)
+mainElement.append(imageElement)
+mainElement.append(anchorElement)
+mainElement.append(linkElement)
 
-aElement.classList.add('link')
 buttonElement.append('remove')
-aElement.append('Link to Google')
+anchorElement.append('Link to Google')
 
-htmlElement.appendChild(headElement)
-htmlElement.appendChild(bodyElement)
-headElement.appendChild(metaElement)
-headElement.appendChild(titleElement)
-bodyElement.appendChild(buttonElement)
-bodyElement.appendChild(mainElement)
-bodyElement.appendChild(scriptElement)
-mainElement.appendChild(imgElement)
-mainElement.appendChild(aElement)
 
-console.log(htmlElement)
+buttonElement.addEventListener("click", function () {
+    mainElement.remove(mainElement)
+
+}
+
+
+//const buttonElement = document.querySelector ('BUTTON')
+
+//<img; src="https://www.goldengate.org/assets/1/15/gallerymaindimensionid/color_image_looking_up_tower_3.jpg?2577"/>
+//</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+)
